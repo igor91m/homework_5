@@ -1,16 +1,11 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+'''
+r - Открыть файл на чтение (режим по умолчанию)
+w - Открыть на запись. При этом удалить содержимое файла. Если файла нет, создать новый.
+x - Открыть файл на запись, если его нет. Если файл есть, он не будет создан.
+a - Открыть файл на дозапись. Добавить информацию в конец файла.
+b - Открыть файл в двоичном формате.
+t - Открыть файл в текстовом формате (режим по умолчанию)
++ - Открыть файл на чтение и запись
+'''
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
