@@ -4,3 +4,13 @@
 Выполнить подсчет средней величины дохода сотрудников.
 '''
 
+with open('task_3.txt', 'r', encoding='utf-8') as f:
+    salary = []
+    poor = []
+    my_list = f.read().split('\n')
+    for i in my_list:
+        i = i.split()
+        if int(i[1]) < 20000:
+           poor.append(i[0])
+        salary.append(i[1])
+print(f'Оклад меньше 20.000 {poor},\nCредний оклад {sum(map(int, salary)) / len(salary)}')
