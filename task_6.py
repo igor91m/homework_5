@@ -14,8 +14,8 @@
 '''
 def subjects():
     try:
-    with open('task_6.txt', 'r') as init_f:
-        for line in init_f:
+    with open('task_6.txt', 'r') as file_obj:
+        for line in file_obj:
             subject, lecture, practice, lab = line.split()
             subj[subject] = int(lecture) + int(practice) + int(lab)
         print(f'Общее количество часов по предмету: \n {subj}')
@@ -23,3 +23,4 @@ def subjects():
         print('Ошибка в файле')
     except ValueError:
         print('Ошибка ввода-вывода')
+subjects()
